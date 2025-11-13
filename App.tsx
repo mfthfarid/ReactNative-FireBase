@@ -1,3 +1,5 @@
+// globalThis.RNFB_SILENCE_MODULAR_DEPRECATION_WARNINGS = true;
+
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import AppNavigator from './src/navigation/AppNavigator';
