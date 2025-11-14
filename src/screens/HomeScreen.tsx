@@ -95,6 +95,14 @@ const HomeScreen = ({ navigation }: Props) => {
       </Text>
 
       <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate('FirestoreExample')}
+        activeOpacity={0.8}
+      >
+        <Text style={styles.buttonText}>Firestore Example</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
         onPress={() => {
           //   auth().signOut();
           getAuth().signOut();
@@ -102,7 +110,7 @@ const HomeScreen = ({ navigation }: Props) => {
         }}
         style={styles.logoutButton}
       >
-        <Text style={styles.logoutText}>Logout</Text>
+        <Text style={styles.logoutText}>Logo ut</Text>
       </TouchableOpacity>
     </View>
   );
@@ -122,6 +130,17 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
+  },
+  button: {
+    backgroundColor: '#f4d836ff',
+    padding: 15,
+    borderRadius: 10,
+    marginTop: 20,
+  },
+  buttonText: {
+    color: '#fff',
+    textAlign: 'center',
+    fontWeight: 'bold',
   },
   logoutButton: {
     backgroundColor: '#f44336',
