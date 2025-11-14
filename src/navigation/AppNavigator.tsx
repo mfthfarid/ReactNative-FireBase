@@ -4,6 +4,7 @@ import { RootStackParamList } from '../types/types';
 import LoginScreen from '../screens/auth/LoginScreen';
 import RegisterScreen from '../screens/auth/RegisterScreen';
 import HomeScreen from '../screens/HomeScreen';
+import FirestoreExampleScreen from '../screens/FirestoreExampleScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -23,6 +24,11 @@ export default function AppNavigator() {
       <Stack.Screen
         name="Home"
         component={HomeScreen}
+        // options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="FirestoreExample"
+        component={FirestoreExampleScreen}
         // options={{ headerShown: false }}
       />
     </Stack.Navigator>
